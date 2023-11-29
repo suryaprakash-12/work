@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "work",
+			"path": "../.."
+		},
+		{
+			"path": "D:/React/project/src"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "src"
+	},
+	"extensions": {
+		"recommendations": [
+			"xabikos.javascriptsnippets",
+			"ms-vscode.vscode-typescript-next",
+			"akamud.vscode-javascript-snippet-pack"
+		]
+	}
+}
