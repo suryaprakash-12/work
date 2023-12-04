@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery/jquery-3.7.1.js"></script>
+  <title></title>
+</head>
+<body>
+<img src="logo192.png">
+<button>click</button>
+<button id="img1">click</button><button id="img2">click</button><button id="img3">click</button><button id="img4">click</button><button id="img5">click</button>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+  $("img").fadeIn();
+  })
+  $("#img1").click(function(){
+  $("img").fadeOut();
+  })
+  $("#img2").click(function(){
+  $("img").fadeTo();
+  })
+  $("#img3").click(function(){
+  $("img").fadeToggle();
+  })
+  $("#img4").click(function(){
+  $("img").show();
+  }) 
+   $("#img5").click(function(){
+  $("img").slideUp();
+  })
+  
+})
+</script>
+</body>
+</html>

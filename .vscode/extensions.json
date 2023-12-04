@@ -2,6 +2,7 @@
     "recommendations": [
         "xabikos.javascriptsnippets",
         "ms-vscode.vscode-typescript-next",
-        "akamud.vscode-javascript-snippet-pack"
+        "akamud.vscode-javascript-snippet-pack",
+        "donjayamanne.jquerysnippets"
     ]
 }
