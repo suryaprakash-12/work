@@ -1,4 +1,5 @@
 import './style.css';
+
 import { Link } from 'react-scroll';
 function Nav() {
   return (<>
@@ -7,7 +8,7 @@ function Nav() {
             <ul>
       <li><Link to='home'>HOME</Link></li>
       <li><Link to='Main'>ABOUT</Link></li>
-      <li><Link to="/contact">CONTACT</Link></li>
+      <li><Link to='contact'>CONTACT</Link></li>
     </ul></div>
    
     </div>

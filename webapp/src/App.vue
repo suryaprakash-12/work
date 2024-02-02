@@ -1,19 +1,17 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import signup from './components/signup.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <signup/>
     </div>
   </header>
 
   <main>
-    <TheWelcome />
   </main>
 </template>
 
