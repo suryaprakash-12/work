@@ -164,7 +164,7 @@ scroll-behavior: smooth;
    color: #fff;
    margin-right: 30px;
 }
-#name,#email,#pass{
+#name,#email,#password{
    padding: 10px 70px;
    outline: none;
    border: none;

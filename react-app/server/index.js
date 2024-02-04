@@ -9,7 +9,7 @@ app.use(cors())
 
 mongoose.connect("mongodb://127.0.0.1:27017/database");
 
-app.post('/register',(req,res)=>{
+app.post('/register',async(req,res)=>{
 EM.create(req.body)
 .then(database=>res.json(database))
 .catch(err=>res.json(err))

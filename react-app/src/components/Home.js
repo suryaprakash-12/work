@@ -27,9 +27,9 @@ function Home() {
     </div>
     </section>
        <h1>ABOUT AS:</h1>
-       <p><li>I,m a Frontend web Developer to create a website using Framework or without using Framework</li></p>
-       <p><li>The Frameworks are:</li></p>
-       <p><ol >
+       <h4><li>I,m a Frontend web Developer to create a website using Framework or without using Framework</li></h4>
+       <h4><li>The Frameworks are:</li></h4>
+       <h4><ol >
         <div className="frame">
         <div className="frame-box">
           <div className="react-frame">
@@ -48,8 +48,8 @@ function Home() {
           <h3>HTML&CSS</h3>
         </div>
         </div>
-       </ol></p>
-      <p><li>I will create a singe page or multipage like Responsive website</li></p>
+       </ol></h4>
+      <h4><li>I will create a singe page or multipage like Responsive website</li></h4>
       </div>
       <br/><br/><br/><div className="tin">
       <h1>FRAMEWORKS USING FOR WEBSITES</h1><br/><br/>

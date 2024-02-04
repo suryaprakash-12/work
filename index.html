@@ -1,81 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<style>
-.active{
-  display: none;
-}
-</style> -->
-<!-- <style>
 
-  ul{
-   list-style: none;
-   display: flex;
-   float: right;
-   background-color: aqua;
-   width: 200px;
-   justify-content: space-around;
-   align-items: center;
-
-  }
- 
-  .fa{
-    display: none;
-  }
-  @media screen and (max-width:600px){
-  .fa{
-    display: block;
-    color: black;
-  }
- ul{
-  flex-direction: column;
-  
- }
- li{
-  display: none;
- }
- }
-  .show{
-    display: block;
-  }
-
-</style>
-
-<script>
-function tag(){
-  var link=document.getElementsByClassName("link");
-  for(i=0;i<link.length ;i++)
-  link[i].classList.toggle('show')
-}
-</script>
-<body>
-<nav>
-  <div align="right">
-  <i onclick="tag()" class="fa fa-solid fa-bars"></i></div>
- <ul >
-  <li class="link">surya</li>
-  <li class="link">sony</li>
-  <li class="link">doni</li>
- </ul> </nav> -->
- <!-- <script>
-$(document).ready(function(){
-  $("p").click(function(){
-      $(this).hide();
-    });
-});
- </script>
- <body>
-  <p>kjdskjskdhdsj</p>
- <img src="download.jpg" id="img">
- <button id="btn">fade</button>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,8 +6,8 @@ $(document).ready(function(){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!-- <script>
 $(document).ready(function(){
-  $(".r").click(function(){
-    $(".t").fadeToggle(2000);
+  $("btn").click(function(){
+    $(".nav").fadeToggle(2000);
   });
 });
 </script>
@@ -103,11 +26,8 @@ $(document).ready(function(){
 
   } -->
 
-  <style>
-    .r{
-    display: none;      
-    }
-    .t{
+  <!-- <style>
+    .nav{
       list-style: none;
    display: flex;
   float: right;
@@ -115,10 +35,16 @@ $(document).ready(function(){
   gap: 20px;
    align-items: center;
   
+    }li{
+      
     }
-    @media screen and (max-width:400px){
+    @media screen and (max-width:800px){
 li{
   display: none;
+  margin-right: 20px;
+}
+.nav{
+  flex-direction: column;
 }
 .show{
   display: block;
@@ -134,12 +60,116 @@ li{
 </script>
 <body>
 
-  <div class="r" onclick="fun()" >
-  <i  class="fa fa-solid fa-bars" ></i></div>
- <ul class="t">
+  <div class="btn" onclick="fun()" ><i class="fa fa-solid fa-bars"></i></div>
+ <ul class="nav">
   <li class="link">surya</li>
   <li class="link">sony</li>
   <li class="link">doni</li>
- </ul> 
+ </ul>  -->
+ <style>
+  html{
+    scroll-behavior: smooth;
+  }
+  #nav1{
+    position: fixed;
+    background-color: black;
+    color: #fff;
+    display: none;
+    margin-left: 95%; 
+    width: 50px;
+    height: 20px;
+   margin-top: 30%; 
+  }
+  p{
+    position: absolute;
+  }
+ </style>
+ <body>
+  <p>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+
+
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+</p>
+<button id="nav">click</button>
+<i class="fa fa-phone" id="nav1"></i>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if($(this).scrollTop()>100){
+         $("#nav1").fadeIn();
+      }else{
+        $("#nav1").fadeOut();
+      }
+    })
+
+    $("#nav").click(function(){
+      $('html,body').animate({scrollTop :0},0)
+    })
+    $("#nav1").click(function(){
+      $(window).scrollTop(0)
+    })
+  })
+</script>
 </body>
 </html>

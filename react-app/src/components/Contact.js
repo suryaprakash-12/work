@@ -1,15 +1,15 @@
 import { useState } from "react"
-import axios from 'axios'
+import axios from 'axios';
 
 export default function Contact() {
-  const[name,setName]=useState()
-  const[email,setEmail]=useState()
-  const[password,setPassword]=useState()
+  const[name,setName]=useState('')
+  const[email,setEmail]=useState('')
+  const[password,setPassword]=useState('')
   
 
-  const Submit=(e)=>{
+  const Submit=async (e)=>{
     e.preventDefault()
-    axios.post('http://localhost:3001/register',{name,email,password})
+   await axios.post('http://localhost:3001/register',{name,email,password})
     .then(result=>console.log(result))
     .catch(err=>console.log(err))
   }
@@ -52,12 +52,14 @@ export default function Contact() {
             <p>so.ny9022</p>
           </div>
         <br/>
-      <form className="form" onSubmit={Submit}><div className="box">
+      <form className="form" onSubmit={Submit}>
+        <div className="box">
         <label htmlFor="name"><strong>Name:</strong></label><br />
         <input type="text" id="name" 
         name="name" required
          placeholder="type here"
          onClick={(e)=>setName(e.target.value)}
+         autoComplete="on"
          /><br /><br/>
         <label htmlFor="email"><strong>Email Address:</strong></label><br />
         <input type="email" id="email" 
@@ -65,9 +67,10 @@ export default function Contact() {
          required 
         placeholder="type here" 
         onClick={(e)=>setEmail(e.target.value)}
+        autoComplete="on"
         /><br /><br/>
         <label htmlFor="password"><strong>password:</strong></label><br/>
-        <input type='text' id='pass' name='password' placeholder="type here"
+        <input type='text' id='password' name='password' placeholder="type here"
         onClick={(e)=>setPassword(e.target.value)}/><br/><br/>
         <input type='submit' value="button" id="btn"/></div>
       </form>
