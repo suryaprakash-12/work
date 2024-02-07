@@ -9,12 +9,12 @@
     .b .li{
         background-color: rgb(203, 104, 104);
         width: 100px;
-        margin-top: 120px;    
+        margin-top: 71px;    
     }
     .b{
         background-color: rgb(229, 221, 221);
         height: 20vh;
-        width: 100px;
+        width: 60px;
         border-radius: 3rem;
         display: flex;
         align-items: center;
@@ -27,7 +27,7 @@
         <div class="li"></div>
         
     </div>
-    <div class="c">20%</div>
+    <div class="c"></div>
     <script>
         let li=document.querySelector(".li")
         let c=document.querySelector(".c")
@@ -35,16 +35,8 @@
             li.style.height=battery.level *100 + "%";
             c.innerHTML=parseInt(battery.level *100)+"%";
 
-            if(li ==100){
-                li.style.background="gray";
-            }else if(li >20){
-                li.style.background="white";
-            }
-            else if(li <10){
-                li.style.background="white";
-            }
-            else{
-                li.style.background="";
+            if(li == '57'){
+                li.style.background="blue";
             }
         })
     </script>

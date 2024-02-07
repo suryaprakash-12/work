@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <form method="get">
+        <div>
+        pass:<input type="text" id="pass" class="form-control" required></div>
+        <div>conform:<input type="text" id="conform" required>
+        <p id="err"></p></div>
+        <button id="btn">click</button>
+        </form>
+    <script>
+      document.getElementById("btn").addEventListener("click",validatepassword)
+      function validatepassword(){
+        var pass=document.getElementById("pass").value;
+        var conform=document.getElementById("conform").value;
+        var err=document.getElementById("err");
+
+        if(pass === "" || conform === ""){
+            err.innerHTML="enter the password";
+            err.style.color="red";
+        }else if(pass !== conform){
+            err.innerHTML="pass not match";
+            err.style.color="red";
+        }
+        else{
+            err.innerHTML="pass  match";
+            err.style.color="green";
+        }
+      }
+    </script> -->
+    <style>
+        body{
+            background-color: rgb(37, 37, 37);
+        }
+      #display{
+        border: none;
+        background-color: rgb(37, 37, 37);
+        width: 72%;
+        height: 200px;
+        border-radius: 1rem;
+        font-size: 50px;
+        text-align: end;
+        color: azure;
+      }
+     .r{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-top: 10px;
+     }
+     .num{
+        width: 18%;
+        border: none;
+        height: 90px;
+        background-color:rgb(83, 82, 82);
+        color: aliceblue;
+        
+        font-size: 25px;
+        border-radius: 0.5rem;
+     }
+     .num:hover{
+        background-color: rgb(57, 56, 56);
+     }
+     #equal{
+        background-color: rgb(246, 145, 91);
+     }
+     #symbol{
+        background-color: rgb(57, 56, 56);
+     }
+     #symbol:hover{
+        background-color: rgb(100, 97, 97);
+     }
+     #store{
+        margin-left: 73%;
+        position: absolute;
+        background-color: grey;
+        width: 26%;
+        height: 95svh;
+     }
+    </style>
+    <div class="t">
+        <div id="store" style="color: red;"><a href="https://wa.me/918012025578?text=hi">whatsapp</a></div>
+    <input type="text"  id="display">
+</div>
+     <div class="r">
+        <div>
+        <input type="button" class="num" id="symbol" value="C" onclick="display.value=''">
+        <input type="button" class="num" id="symbol" value="DE" onclick="display.value=display.value.slice(0,-1)">
+        <input type="button" class="num" id="symbol" value="x²" onclick="display.value=display.value*display.value">
+        <input type="button" class="num" id="symbol" value="sqrt()" onclick="display.value=Math.sqrt(display.value)">
+        </div>
+        <div>
+        <input type="button" class="num" value="7" onclick="display.value+='9'">
+        <input type="button" class="num" value="8" onclick="display.value+='8'">
+        <input type="button" class="num" value="9" onclick="display.value+='7'">
+        <input type="button" class="num" id="symbol" value="X" onclick="display.value+='*'">
+    </div>
+    <div>
+        <input type="button" class="num" value="4" onclick="display.value+='6'">
+        <input type="button" class="num" value="5" onclick="display.value+='5'">
+        <input type="button" class="num" value="6" onclick="display.value+='4'">
+        <input type="button" class="num" value="_" onclick="display.value+='-'">
+    </div>
+    <div>
+        <input type="button" class="num" value="1" onclick="display.value+='9'">
+        <input type="button" class="num" value="2" onclick="display.value+='8'">
+        <input type="button" class="num" value="3" onclick="display.value+='7'">
+        <input type="button" class="num" id="symbol" value="&plus;" onclick="display.value+='+'">
+    </div>
+        <div>
+        <input type="button" class="num" value="%" onclick="display.value+='%'">
+        <input type="button" class="num" value="0" onclick="display.value+='0'">
+        <input type="button" class="num" value="." onclick="display.value+='.'">
+        <input type="button" class="num" id="equal" value="=" onclick="display.value=eval(display.value)">
+        </div>
+     </div>
+   <script>
+   document.addEventListener('keydown',function(e){
+    var key=e.key;
+    if(key>='0' && key<='9'){
+        document.getElementById("display").value+=key;
+    }else if(key==='+'|| key==='-'|| key==='*' ||key==='/'){
+        document.getElementById("display").value+=key;
+    }else if(key==='Enter'|| key==="="){
+    document.getElementById("display").value=eval(document.getElementById("display").value);
+     }
+     else if(key==='Backspace'){
+        document.getElementById("display").value=document.getElementById("display").value.slice(0,-1);
+     }
+   })
+
+   document.getElementById("equal").addEventListener('click',store)
+   function store(){
+    var display=document.getElementById("display").value;
+    document.getElementById("store").innerHTML+=display;
+   }
+   document.addEventListener('contextmenu',
+    function(event){
+        event.preventDefault();
+    } 
+   )
+   </script>
+</body>
+</html>
