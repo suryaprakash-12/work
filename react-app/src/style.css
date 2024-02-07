@@ -7,7 +7,7 @@
 .header{
    width: 100%;
    height: 100vh;
-background:#ff0000 url(download.jpg);
+ background:#ff0000 url(download.jpg); 
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
@@ -582,12 +582,14 @@ background-image: linear-gradient(to bottom, transparent 46%,rgba(12,13,19,0.5) 
   
 }
 .card-logo2{
-   width: 100%;
+   width: 70%;
    opacity: 0;
    transition: all 0.5s;
    position: absolute;
    z-index: -1;
    filter: drop-shadow(2px 2px 2px #000);
+   border-radius: 2rem;
+   padding-right: 20px;
 }
 .card:hover .card-logo2{
    opacity: 1;
@@ -648,9 +650,21 @@ background-image: linear-gradient(to bottom, transparent 46%,rgba(12,13,19,0.5) 
     height: 25%;
    width: 100%;
 }
-#main-logo img{
-   height: 80%;
-   width: 30%;
+.step{
    position: absolute;
-   border-radius: 50%;
+   background-color: #1e1e1e;
+   height: 70%;
+   width: 30%;
+   margin-left: 5%;
+   margin-top: 10%;
+   box-shadow: 5px 0px 10px gray;
+   border-radius: 3rem;
+}
+.step img{
+   position: absolute;
+   height: 110%;
+   width: 60%;
+   padding-left: 20%;
+   bottom: 15%;
+   filter: drop-shadow(5px 0px 20px navy);
 }

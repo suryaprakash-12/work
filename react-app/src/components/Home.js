@@ -4,11 +4,11 @@ import { useState } from "react";
 // import {faHome, faPhone, faRandom, faVoicemail} from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
-  const[menuBar,setMenuBar]=useState(false)
+
   return (
     <div id="home">
       <br/>
-      <div className="image"><img src="download.jpg" id="clone" alt="check"/><img src="img.jpg" alt="check"/></div>
+      <div className="image"><img src="surya/surya.jpg" id="clone" alt="check"/><img src="img.jpg" alt="check"/></div>
       <div className="image1"><img src="logo192.png" id="clone1" alt="check"/></div>
       <div className="image3"><img src="img3.jpg" alt="check"/></div>
       <div className="image2"><img src="img2.png" alt="check"/></div>

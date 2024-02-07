@@ -8,11 +8,11 @@ function Main() {
             <h1 style={{color:"skyblue", paddingLeft:"45%"}}>welcome</h1>
         <div id="main-logo" onClick={()=>{
         setMenuBar(!menuBar);
-        }}><img src='framework.jpg'/></div>
+        }}><div className="step"><img src='surya/surya.png'/></div></div>
             <br/>
             <div className={menuBar ? "check" : ""}  id="navlist">
                 <div className="set-of-frame">
-                <AnimationOnScroll animateIn="animate__fadeIn"> 
+                <AnimationOnScroll animateIn="animate__flip"> 
                 <div className="skill-react">
                 <div className="skill-container">
                 <div className="skills-box">
@@ -54,11 +54,11 @@ function Main() {
         <img src="logo512.png" alt="check"  className="card-logo"/>
        </div>
        <img src="logo512.png" alt="check"  className="card-logo1"/>
-       <img src="logo512.png" alt="check"  className="card-logo2"/>
+       <img src="surya.png" alt="check"  className="card-logo2"/>
     </div>
     </div>
 </AnimationOnScroll>
-    <AnimationOnScroll animateIn="animate__fadeIn"> 
+    <AnimationOnScroll animateIn="animate__flip"> 
     <div className="skill-flask">
     <div className="skill-container">
     <div className="skills-box">
@@ -103,10 +103,10 @@ function Main() {
 
     <div className="card">
        <div className="wrapper">
-        <img src="logo512.png" alt="check"  className="card-logo"/>
+        <img src="surya/surya3.jpg" alt="check"  className="card-logo"/>
        </div>
-       <img src="logo512.png" alt="check"  className="card-logo1"/>
-       <img src="logo512.png" alt="check"  className="card-logo2"/>
+       <img src="surya/surya2.jpg" alt="check"  className="card-logo1"/>
+       <img src="surya/surya.png" alt="check"  className="card-logo2"/>
     </div>
    </div>
    </AnimationOnScroll>
