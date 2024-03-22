@@ -7,7 +7,7 @@ const app= express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb://127.0.0.1:27017/database");
+mongoose.connect("mongodb+srv://sonydoni73:Suryaprakash@cluster0.nsn38ji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 app.post('/register',async(req,res)=>{
 EM.create(req.body)

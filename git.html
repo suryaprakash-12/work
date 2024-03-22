@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="http://localhost:8097"></script> -->
+</head>
+<body>
+    <!-- <object data="download.pdf" width="800" height="1000"></object>
+     -->
+     <div class="container">
+     <div class="class-1"  ></div>
+     <div class="class-2" ></div>
+     <div class="class-3" ></div>
+     <div class="class-4" ></div>
+     <span>loading</span>
+     </div>
+    <style>
+    body{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    span{
+        color: aqua;
+    }
+    .container{
+        padding-top: 20%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .class-1,.class-2,.class-3,.class-4{
+   
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        border: 0px solid #29acd8;
+        
+    }
+    .class-1{
+        border-bottom-width: 8px;
+        animation: rotate 2s linear infinite;
+    }
+    .class-2{
+    border-left-width: 8px;
+    border-color: rgb(167, 249, 3);
+    animation: run 2s linear infinite;
+    }
+    .class-3{
+    border-top-width: 8px;
+    border-color: rgb(253, 8, 208);
+    animation: move 2s linear infinite;
+    }
+    .class-4{
+    border-right-width: 8px;
+    border-color: rgb(127, 125, 7);
+    animation: start 2s linear infinite;
+    }
+   @keyframes rotate {
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+   
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+
+    }
+   }
+   @keyframes run {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+   
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+
+    }}
+    @keyframes move {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+   
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+
+    }}
+    @keyframes start {
+    0%{
+        transform: rotateX(65deg) rotateY(30deg) rotateZ(0deg);
+    }
+   
+    100%{
+        transform: rotateX(65deg) rotateY(30deg) rotateZ(360deg);
+
+    }}
+    select{
+        height: 30px;
+        padding:0px 20px; 
+        flex: 1;
+        color: #fff;
+        background: #403d84;
+        outline: none;
+        border: none;
+        border-radius: 35px;
+        appearance: none;
+    }
+    .body{
+        background-color: #403d84;
+    }
+    </style>
+    <textarea  id="r" cols="20" rows="10"></textarea>
+    <br/><br/>
+    <button onclick="y()" >click</button>
+    <button id="btn" >start</button>
+    <button id="btn1" >stop</button>
+    <script>
+        function y(){
+        const ans =document.getElementById("r").value;   
+        const speech=new SpeechSynthesisUtterance(ans);
+        window.speechSynthesis.speak(speech)
+       }
+      
+    </script>
+</body>
+</html>

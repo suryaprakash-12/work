@@ -17,6 +17,6 @@ export class AppComponent {
     email:'',
   };
   onSubmit(){
-    console.log(aler(this.user));
+    console.log(alert(this.user.name + " has been added!"));
   }
 }

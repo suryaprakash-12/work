@@ -11,8 +11,7 @@ function Main() {
         }}><div className="step"><img src='surya/surya.png'/></div></div>
             <br/>
             <div className={menuBar ? "check" : ""}  id="navlist">
-                <div className="set-of-frame">
-                <AnimationOnScroll animateIn="animate__flip"> 
+                <div className="set-of-frame"> 
                 <div className="skill-react">
                 <div className="skill-container">
                 <div className="skills-box">
@@ -57,8 +56,8 @@ function Main() {
        <img src="surya.png" alt="check"  className="card-logo2"/>
     </div>
     </div>
-</AnimationOnScroll>
-    <AnimationOnScroll animateIn="animate__flip"> 
+
+   
     <div className="skill-flask">
     <div className="skill-container">
     <div className="skills-box">
@@ -100,8 +99,7 @@ function Main() {
                             </div>
                         </div>
                        </div> 
-
-    <div className="card">
+<div className="card">
        <div className="wrapper">
         <img src="surya/surya3.jpg" alt="check"  className="card-logo"/>
        </div>
@@ -109,8 +107,7 @@ function Main() {
        <img src="surya/surya.png" alt="check"  className="card-logo2"/>
     </div>
    </div>
-   </AnimationOnScroll>
-   <AnimationOnScroll animateIn="animate__fadeIn"> 
+   
     <div className="skill-html">
         <div className="skill-container">
     <div className="skill-set">
@@ -132,7 +129,7 @@ function Main() {
        <img src="logo512.png" alt="check" className="card-logo1"/>
        <img src="logo512.png" alt="check"  className="card-logo2"/>
     </div>
-    </div></AnimationOnScroll>
+    </div>
     </div>
            </div>
             </div>

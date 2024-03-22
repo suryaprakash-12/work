@@ -652,7 +652,9 @@ background-image: linear-gradient(to bottom, transparent 46%,rgba(12,13,19,0.5) 
 }
 .step{
    position: absolute;
-   background-color: #1e1e1e;
+   background:linear-gradient(to bottom,
+   rgb(67, 68, 68),rgb(71, 71, 75),rgb(61, 61, 62)
+   );
    height: 70%;
    width: 30%;
    margin-left: 5%;
@@ -662,9 +664,10 @@ background-image: linear-gradient(to bottom, transparent 46%,rgba(12,13,19,0.5) 
 }
 .step img{
    position: absolute;
-   height: 110%;
-   width: 60%;
-   padding-left: 20%;
-   bottom: 15%;
-   filter: drop-shadow(5px 0px 20px navy);
+   height: 90%;
+   width: 45%;
+   cursor: pointer;
+   padding-left: 25%;
+   bottom: 35%;
+   filter: drop-shadow(5px 0px 10px gray);
 }

@@ -4,7 +4,7 @@ import { useState } from "react";
 // import {faHome, faPhone, faRandom, faVoicemail} from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
-
+const[menuBar,setMenuBar]=useState(false)
   return (
     <div id="home">
       <br/>
